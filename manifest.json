@@ -11,6 +11,7 @@
     "description": "My Profile",
     "orientation": "any",
     "related_applications": [],
+    "categories": ["personal", "lifestyle", "profile"],
     "prefer_related_applications": false,
     "icons": [{
             "src": "assets/icongen/favicon-16x16.png",

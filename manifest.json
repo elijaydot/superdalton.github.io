@@ -1,0 +1,50 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Pranadot - Welcome To My World",
+    "short_name": "Pranadot",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://superdalton.github.io/index.html",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "My Profile",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [{
+            "src": "assets/icongen/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/tile70x70.png",
+            "sizes": "70x70",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/tile150x150.png",
+            "sizes": "150x150",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/tile310x150.png",
+            "sizes": "310x150",
+            "type": "image/png"
+          }, {
+            "src": "assets/icongen/tile310x310.png",
+            "sizes": "310x310",
+            "type": "image/png"
+          }
+    ],
+    "url": "https://superdalton.github.io"
+}

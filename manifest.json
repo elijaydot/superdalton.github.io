@@ -13,6 +13,13 @@
     "related_applications": [],
     "categories": ["personal", "lifestyle", "profile"],
     "prefer_related_applications": false,
+    "screenshots" : [
+      {
+        "src": "assets/img/splash-superdaltongithubio.png",
+        "sizes": "1280x720",
+        "type": "image/png"
+      }
+    ],
     "icons": [{
             "src": "assets/icongen/favicon-16x16.png",
             "sizes": "16x16",

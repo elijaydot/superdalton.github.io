@@ -13,6 +13,11 @@
     "related_applications": [],
     "categories": ["personal", "lifestyle", "profile"],
     "prefer_related_applications": false,
+    "shortcuts": [
+      {
+        "name": "Feel blue",
+        "short_name": "Blue"
+      }],
     "screenshots" : [
       {
         "src": "assets/img/splash-superdaltongithubio.png",

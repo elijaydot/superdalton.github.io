@@ -5,7 +5,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 const CACHE = "pwabuilder-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "ToDo-replace-this-name.html";
+const offlineFallbackPage = "assets/local/offline.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -45,3 +45,30 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
+
+// This is the "Offline copy of assets" service worker added 17/5/2021 4:10 am
+
+const CACHE = "pwabuilder-offline";
+const QUEUE_NAME = "bgSyncQueue";
+
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
+const bgSyncPlugin = new workbox.backgroundSync.Plugin(QUEUE_NAME, {
+  maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
+});
+
+workbox.routing.registerRoute(
+  new RegExp('/*'),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: CACHE,
+    plugins: [
+      bgSyncPlugin
+    ]
+  })
+);

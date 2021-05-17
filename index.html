@@ -11,11 +11,11 @@
       const el = document.createElement('pwa-update');
       document.body.appendChild(el);
     </script>
-    <script>
+    <!-- <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/service-worker.js");
       }
-    </script>
+    </script> -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
     <script type="module" src="pwabuilder-sw-register.js"></script>
     <link rel="shortcut icon" type="image/ico" href="assets/icongen/favicon.ico"
@@ -450,7 +450,7 @@
       <i class="icon-arrow-up"></i>
     </a>
 
-    <script src="/assets/js/app.js"></script>
+    <script type="module" src="/assets/js/app.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-min.js"></script>

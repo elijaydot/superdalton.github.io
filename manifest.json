@@ -15,9 +15,24 @@
     "prefer_related_applications": false,
     "shortcuts": [
       {
-        "name": "Portfolio",
-        "short_name": "Pranadot"
-      }],
+        "name": "about me",
+        "short_name": "about",
+        "url" :"https://superdalton.github.io/#about"
+      },  {
+        "name": "services",
+        "short_name": "services",
+        "url" :"https://superdalton.github.io/#services"
+      },  {
+        "name": "resume",
+        "short_name": "resume",
+        "url" :"https://superdalton.github.io/#resume"
+      },  {
+        "name": "contact me",
+        "short_name": "contact",
+        "url" :"https://superdalton.github.io/#contact"
+      }
+
+    ],
     "screenshots" : [
       {
         "src": "assets/img/splash-superdaltongithubio.png",
@@ -57,7 +72,23 @@
             "src": "assets/icongen/tile310x310.png",
             "sizes": "310x310",
             "type": "image/png"
+          }, {
+            "src": "assets/icongen/maskable_icon_x48.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "purpose": "maskable" 
+          }, {
+            "src": "assets/icongen/maskable_icon_x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "maskable" 
+          } , {
+            "src": "assets/icongen/maskable_icon_x161.png",
+            "sizes": "161x161",
+            "type": "image/png",
+            "purpose": "maskable" 
           }
+
     ],
     "url": "https://superdalton.github.io"
 }

@@ -3,7 +3,7 @@
     "lang": "en",
     "name": "Pranadot - Welcome To My World",
     "short_name": "Pranadot",
-    "scope": "/",
+    "scope": "https://superdalton.github.io/index.html",
     "display": "browser",
     "start_url": "https://superdalton.github.io/index.html",
     "background_color": "#000000",
